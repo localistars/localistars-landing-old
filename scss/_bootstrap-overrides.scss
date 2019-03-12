@@ -1,0 +1,37 @@
+.bg-primary {
+  background-color: $highlight !important;
+}
+
+.btn-primary {
+  background-color: $highlight;
+  border-color: $highlight;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($highlight, 10%) !important;
+    border-color: darken($highlight, 10%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem fade-out($highlight, 0.5);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($secondary, 10%) !important;
+    border-color: darken($secondary, 10%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem fade-out($secondary, 0.5);
+  }
+}
+
+img.rounded-circle {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
