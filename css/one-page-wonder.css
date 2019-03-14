@@ -147,6 +147,19 @@ header .masthead .bg-circle-4 {
   }
 }
 
+.section-secondary {
+  background-color: #1d7d89;
+  color: #fff;
+}
+
+.section-secondary hr {
+  border-top: solid 1px #fff;
+}
+
+.section-secondary .text-muted {
+  color: #ccc !important;
+}
+
 .bg-primary {
   background-color: #fca82a !important;
 }
