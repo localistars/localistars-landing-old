@@ -24,9 +24,9 @@ header .masthead {
     .masthead-heading {
       background-image: url("../img/localistars_logo_inv.svg");
       background-position-x: center;
-      background-size: 550px;
+      background-size: 350px;
       background-repeat: no-repeat;
-      height: 120px;
+      height: 70px;
       font-size: 4rem;
     }
     .masthead-subheading {
@@ -77,7 +77,9 @@ header .masthead {
     padding-bottom: 10rem;
     .masthead-content {
       .masthead-heading {
-        font-size: 6rem;
+        background-size: 550px;
+        height: 120px;
+        font-size: 4rem;
       }
       .masthead-subheading {
         font-size: 4rem;

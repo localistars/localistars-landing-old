@@ -30,8 +30,26 @@
   }
 }
 
+.p-5.align-items-center {
+  text-align: center;
+}
+
 img.rounded-circle {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
+}
+
+@media (min-width: 992px) {
+  img.rounded-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  img.rounded-circle {
+    width: 400px;
+    height: 400px;
+  }
 }
