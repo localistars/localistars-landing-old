@@ -52,7 +52,7 @@ gulp.task("pug", function buildHTML() {
 // Minify compiled CSS
 gulp.task(
   "minify-css",
-  gulp.series("less", function() {
+  /*gulp.series("less",*/ function() {
     return gulp
       .src("css/main.css")
       .pipe(cleanCSS({ compatibility: "ie8" }))
@@ -63,7 +63,7 @@ gulp.task(
           stream: true
         })
       );
-  })
+  }//)
 );
 
 // Minify JS
@@ -144,7 +144,7 @@ gulp.task(
       gulp.watch(["*.pug", "pug/*.pug"], gulp.series("pug"));
       gulp.watch("less/*.less", gulp.series("less"));
       gulp.watch("less/components/*.less", gulp.series("less"));
-      gulp.watch("css/*.css", gulp.series("minify-css"));
+      gulp.watch("css/main.css", gulp.series("minify-css"));
       gulp.watch("js/*.js", gulp.series("minify-js"));
       // Reloads the browser whenever HTML or JS files change
       gulp.watch("*.html", browserSync.reload);

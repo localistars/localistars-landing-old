@@ -291,7 +291,7 @@ header {
   color: white;
 }
 header #brand-logo {
-  margin-left: -10px;
+  margin-left: 4px;
   top: -20px;
 }
 header .header-overlay {
