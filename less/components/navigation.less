@@ -1,0 +1,100 @@
+// Navigation
+
+.navbar-default {
+    background-color: white;
+    border-color: fade(@gray-darker, 5%);
+    .transition-all;
+    .heading-font;
+    .navbar-brand {
+      display: none;
+    }
+    .navbar-header .navbar-brand {
+        display: inline-block;
+        position: absolute;
+        background-image: url("../img/localistars_logo.svg");
+        background-repeat: no-repeat;
+        width: 140px;
+        top: 9px;
+        left: 10px;
+    }
+    .navbar-header .navbar-toggle {
+        font-size: 20px;
+        color: @gray-darker;
+        padding: 5px 10px 0;
+        border: none;
+    }
+    .nav {
+        > li {
+            > a {
+                .alt-font;
+                font-size: 11px;
+            }
+            > a,
+            > a:focus {
+                color: @gray-darker;
+                &:hover {
+                    color: @theme-primary;
+                }
+            }
+            &.active {
+                > a,
+                > a:focus {
+                    color: @theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+      }
+
+    @media (min-width: 768px) {
+        background-color: transparent;
+        border-color: transparent;
+        .navbar-header .navbar-brand {
+            position: absolute;
+            background-image: none;
+            background-repeat: no-repeat;
+            width: 120px;
+            top: 8px;
+            left: 80px;
+        }
+        .nav > li > a,
+        .nav > li > a:focus {
+            color: fade(white, 70%);
+            &:hover {
+                color: white;
+            }
+        }
+        &:not(.affix) {
+          .dropdown.open {
+            .dropdown-toggle {
+              background-color: white;
+              color: black;
+            }
+          }
+          .dropdown-menu {
+            border-top-left-radius: 4px;
+            margin-right: -1px;
+          }
+        }
+        &.affix {
+            background-color: white;
+            border-color: fade(@gray-darker, 10%);
+            .navbar-header .navbar-brand {
+                background-image: url("../img/localistars_logo.svg");
+            }
+            .nav > li > a,
+            .nav > li > a:focus {
+                color: @gray-darker;
+                &:hover {
+                    color: @theme-primary;
+                }
+            }
+            .dropdown-menu {
+              margin-right: -1px;
+            }
+        }
+    }
+}

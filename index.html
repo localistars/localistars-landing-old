@@ -1,326 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>localistars - more than localization experts</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom fonts for this template -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-    /> -->
-
-    <!-- Custom styles for this template -->
-    <link href="css/one-page-wonder.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="locize - Bridging the gap between translation and development. With locize we remove the pain in the translation process. No more delays in shipping your software because of missing translations. Translator could keep up with changes from day one. The continuous localization process keeps up with your demanding business. Stop waiting - start localizing.">
+    <meta name="author" content="inweso GmbH">
+    <meta name="copyright" content="inweso GmbH">
+    <meta name="keywords" content="localization,internationalization,localize,translate,locize,l10n,i18n,javascript,nodejs,localization as a service,saas translation,saas localization,laas,continuous localization,DevOps,process,free,website localization,service,software,web app,web,mobile,desktop,game,translation management,online,automate,process of localization,localization process,translation service,localization service,translation software,landing page,javascript localize,localization tool,localizing a website,localization solution,cloud localization,cloud translation,serverless,cloud,cdn,react,react.js,reactjs,angular,vue,vue-js,jquery,nodejs,i18next,json,api,react-native,localization api,translation api,localistars">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="locize - continuous localization as a service">
+    <meta property="og:url" content="https://locize.com">
+    <meta property="og:site_name" content="locize - continuous localization as a service">
+    <meta property="og:description" content="locize - Bridging the gap between translation and development. With locize we remove the pain in the translation process. No more delays in shipping your software because of missing translations. Translator could keep up with changes from day one. The continuous localization process keeps up with your demanding business. Stop waiting - start localizing.">
+    <meta property="og:locale" content="en">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="locize - continuous localization as a service">
+    <meta name="twitter:description" content="locize - Bridging the gap between translation and development. With locize we remove the pain in the translation process. No more delays in shipping your software because of missing translations. Translator could keep up with changes from day one. The continuous localization process keeps up with your demanding business. Stop waiting - start localizing.">
+    <meta name="twitter:creator" content="@localistars">
+    <title>localistars - translation hub</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    <link href="css/main.min.css" rel="stylesheet">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    
+    -->
+    <!-- LOCIZIFY-->
+    <link href="//cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet" type="text/css">
   </head>
-
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <body id="page-top" style="display: block;">
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="#"></a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!-- <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i></button><a class="navbar-brand page-scroll" href="#page-top"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="page-scroll closeOnClick" href="#features">Features</a></li>
+            <li><a href="/how-it-works.html">How it works</a></li>
+            <li><a href="/for-your-team.html">For your team</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="http://blog.locize.com">Blog</a></li>
+            <li><a class="page-scroll closeOnClick" href="#contact">Contact</a></li>
+            <li><a href="https://www.locize.app/login" target="_blank">Login</a></li>
+            <li class="dropdown" translated=""><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="selectedLng"></span><span class="caret" style="margin-top: -3px;"></span></a>
+              <ul class="dropdown-menu" id="lngSelectDropDown"></ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Log In</a>
-            </li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </nav>
-
-    <header class="masthead-main">
-      <div class="masthead text-center text-white">
-        <div class="masthead-content">
-          <div class="container">
-            <div class="masthead-heading mb-0"></div>
-            <h2 class="masthead-subheading mb-0">
-              More than localization experts
-            </h2>
-            <!-- <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a> -->
+    <header>
+      <div class="header-overlay">
+        <div id="particles-js"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="header-content">
+                <div class="header-content-inner"><img id="brand-logo" src="img/localistars_logo_inv.svg" style="max-width: 300px; margin-bottom: 30px;" alt="localistars logo">
+                  <h1>Bridging the gap between translation and development.</h1><a class="btn btn-outline btn-xl page-scroll" href="https://www.locize.app/register" target="_blank">Start Now for Free!</a><a class="btn btn-outline btn-second-outline btn-xl page-scroll" href="#" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube.com/embed/YQryHo1iHb8?rel=0&amp;controls=0&amp;showinfo=0">Watch Video</a>
+                  <h3 i18next-key="whatIsLocize">locize is a modern and affordable localization management solution. It makes your website, app, game or whatever your project is, global, vibrant, and more engaging especially when unleashing the continuous localization capabilities.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="device-container">
+                <div class="device-mockup iphone6_plus portrait white">
+                  <div class="device">
+                    <div class="screen"><img class="img-responsive" src="img/screenshots/iphone6/dashboard.png" alt="locize dashboard"></div>
+                    <!-- .button-->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-circle-1 bg-circle"></div>
-        <div class="bg-circle-2 bg-circle"></div>
-        <div class="bg-circle-3 bg-circle"></div>
-        <div class="bg-circle-4 bg-circle"></div>
       </div>
     </header>
-
-    <section>
+    <section class="customers" id="customers" translated="">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5 align-items-center">
-              <!-- https://pixabay.com/photos/workplace-team-business-meeting-1245776/ -->
-              <img
-                class="img-fluid rounded-circle"
-                src="img/workplace-1245776_1280.jpg"
-                alt=""
-              />
+        <div class="row">
+          <div class="col-lg-12 flex-space"><a href="http://www.bethesda.net/" target="_blank"><img class="grayscale" src="img/customers/bethesda-net-black.svg" style="height: 25px;opacity: 0.4;" alt="customer logo bethesda.net"></a><a href="http://www.wuxus.com/" target="_blank"><img class="grayscale" src="img/customers/wuxus.png" alt="customer logo wuxus"></a><a href="https://www.fubo.tv" target="_blank"><img class="grayscale" style="max-height: 40px" src="img/customers/fubotv.png" alt="customer logo classnet"></a><a href="https://www.withlocals.com/" target="_blank"><img class="grayscale" style="max-height: 40px" src="img/customers/withlocals.png" alt="customer logo withlocals"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-tertiary" id="video" translated="">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/YQryHo1iHb8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
             </div>
           </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">For translators...</h2>
-              <h3>Be connected. Be found. Be a localistar.</h3>
-              <p>
-                Whether as a translation agency or as a freelancer, with
-                localistars you have the opportunity to get more contracts by
-                keeping a direct relation to your customers. Signup and start
-                your magic. You are in control.
-              </p>
-              <hr />
-              <div>
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://locize.us16.list-manage.com/subscribe/post?u=1b94d05ce597f56da6cb02bb4&amp;id=7049ab2554"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                    novalidate
-                  >
-                    <div id="mc_embed_signup_scroll">
-                      <div class="mc-field-group form-group">
-                        <label for="mce-EMAIL"
-                          >Get notified when we're ready for primetime!
-                        </label>
-                        <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          placeholder="Please enter your email"
-                          class="required email form-control"
-                          id="mce-EMAIL"
-                        />
-                      </div>
-                      <div id="mce-responses" class="clear">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display:none"
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display:none"
-                        ></div>
-                      </div>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div
-                        style="position: absolute; left: -5000px;"
-                        aria-hidden="true"
-                      >
-                        <input
-                          type="text"
-                          name="b_1b94d05ce597f56da6cb02bb4_7049ab2554"
-                          tabindex="-1"
-                          value=""
-                          class="form-control"
-                        />
-                      </div>
-                      <div class="clear">
-                        <input
-                          type="submit"
-                          value="Get notified"
-                          name="subscribe"
-                          id="mc-embedded-subscribe"
-                          class="btn btn-secondary"
-                        />
-                        <small id="emailHelp" class="form-text text-muted"
-                          >We'll never share your email with anyone else. You
-                          will get one email when our newest product localistars
-                          is ready to use. After sending that email we will
-                          remove it from our email list.</small
-                        >
+        </div>
+      </div>
+    </section>
+    <section class="features bg-primary text-center" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h2>Grow global &ndash; get locized</h2>
+              <p class="head">You're in need of a localization solution that keeps up with your vibrant business environment?</p>
+              <p class="head">Does your current process break your agile development or continuous deployment process?</p>
+              <p style="margin-top: 20px;">Find out what locize can offer to make your localization experience a success story.</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/integrate_s.jpg" alt="locize integration"></div>
+                          <div class="button"></div>
+                        </div>
                       </div>
                     </div>
-                  </form>
+                    <h3>Time saving over 60%</h3>
+                    <p>Adding one line of code to your website is all needed to get started. All your content gets extracted and sent to your locize project ready to be translated.</p>
+                    <p>Every change to your translations gets instantly reflected on your website and vice versa.</p>
+                    <p>Never again copy/paste translations from a to b.</p>
+                  </div>
                 </div>
-
-                <!--End mc_embed_signup-->
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/stats_s.jpg" alt="locize statistics"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Continuous Localization Lifecycle</h3>
+                    <p>Locize enables you to separate your development and translation process. Keep translating while your development team adds new features to your project.</p>
+                    <p>Update translations anytime, anywhere. No longer depend on your development team adding the new translation files to the codebase.</p>
+                    <p>Keep track of newly added segments. Never lose the overview over your translation progress.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/incontext_editor_s.jpg" alt="locize in-context editor"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Context Matters &mdash; InContext Editing</h3>
+                    <p>Doing proper translations needs more information by providing the context. The best context is always the place where the content is used – your website!</p>
+                    <p>Our incontext editor enables you to directly update your translations from within your website.</p>
+                    <p>Every text segment is one click away! Stop loosing time searching...</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/editor_s.jpg" alt="locize translation editor"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Translation Management</h3>
+                    <p>You can translate your content using our powerful editor.</p>
+                    <p>Invite your inhouse translators giving them the rights for the languages needed.</p>
+                    <p>Got a language not covered? Need extra help or prefer to completely outsource the job? Choose one of our translation service partners.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/translationmemory_s.jpg" alt="locize translation memory"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>The smart translation memory</h3>
+                    <p>With our translation memory you never have to translate the same text again. Simply reuse your exiting translatins over and over again.</p>
+                    <p>By using the translation memory you not only save time but also increase the consistency of your translations.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="device-container">
+                      <div class="device-mockup macbook_2015 silver">
+                        <div class="device">
+                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/auditing_s.jpg" alt="locize auditing"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Auditing</h3>
+                    <p>With the optional auditing service you keep track over all changes done to your projects translations.</p>
+                    <p>Need to provide those information - who did when change which segment? We get you covered.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section-secondary">
+    <section class="testimonials" id="testimonials">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5 align-items-center">
-              <img
-                class="img-fluid rounded-circle"
-                src="img/business-3152586_1280.jpg"
-                alt=""
-              />
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h2>Customer Testimonials</h2>
+              <p class="text-muted">Hear what our customers have to say!</p>
+              <hr>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4">For companies...</h2>
-              <h3>
-                Find connections. Find translators. Find your localistars.
-              </h3>
-              <p>
-                It has never been easier to find the right translator. We bring
-                people together for whom the prospect of long-term and good
-                cooperation is particularly high. How does it work? The formula
-                for success is "direct contact", which means that you select the
-                appropriate translator based on your criteria and negotiate the
-                appropriate conditions directly with the selected person.
-              </p>
-              <hr />
-              <div>
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://locize.us16.list-manage.com/subscribe/post?u=1b94d05ce597f56da6cb02bb4&amp;id=8a07f4f7e9"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                    novalidate
-                  >
-                    <div id="mc_embed_signup_scroll">
-                      <div class="mc-field-group form-group">
-                        <label for="mce-EMAIL"
-                          >Get notified when we're ready for primetime!
-                        </label>
-                        <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          placeholder="Please enter your email"
-                          class="required email form-control"
-                          id="mce-EMAIL"
-                        />
-                      </div>
-                      <div id="mce-responses" class="clear">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display:none"
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display:none"
-                        ></div>
-                      </div>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div
-                        style="position: absolute; left: -5000px;"
-                        aria-hidden="true"
-                      >
-                        <input
-                          type="text"
-                          name="b_1b94d05ce597f56da6cb02bb4_8a07f4f7e9"
-                          tabindex="-1"
-                          value=""
-                        />
-                      </div>
-                      <div class="clear">
-                        <input
-                          type="submit"
-                          value="Get notified"
-                          name="subscribe"
-                          id="mc-embedded-subscribe"
-                          class="btn btn-primary"
-                        />
-                        <small id="emailHelp" class="form-text text-muted"
-                          >We'll never share your email with anyone else. You
-                          will get one email when our newest product localistars
-                          is ready to use. After sending that email we will
-                          remove it from our email list.</small
-                        >
-                      </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="testimonial-container" translated="">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="testimonial testimonial-fullwidth">
+                    <div class="testimonial-title"><img class="grayscale" style="max-height: 50px; max-width: 100%;" src="img/customers/bookingfactory.png"></div>
+                    <div class="testimonial-content">
+                      <p>Locize is a great tool for us to localise our hotel software solution into multiple languages for both users and their guests. We chose Locize because of their flexible pricing structure that is based on usage instead of a large monthly fee.</p>
+                      <p>We already have some great early results and now our users can translate themselves into their local language!</p>
                     </div>
-                  </form>
+                    <div class="author">
+                      <hr>Evan Davies, CEO of The Booking Factory<br><a href="https://thebookingfactory.com">The Booking Factory</a>
+                    </div>
+                  </div>
                 </div>
-
-                <!--End mc_embed_signup-->
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="testimonial">
+                    <div class="testimonial-title"><img class="grayscale" style="max-height: 50px; max-width: 100%;" src="img/customers/hypertrend.png"></div>
+                    <div class="testimonial-content">
+                      <p>“Locize promises a Continuous Localization Lifecycle and delivers it with a bang.”</p>
+                      <p>Using Locize, we have been able to translate over 40,000 key/value pairs for a significantly large application within a matter of days. It cannot get better than this.</p>
+                      <p>Read the full&nbsp;<a href="http://www.hypertrends.com/2017/11/localization-using-locize/" target="_blank">success story.</a></p>
+                    </div>
+                    <div class="author">
+                      <hr>Anup Marwadi, CEO<br><a href="http://www.hypertrends.com/">Hypertrends Global Inc</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12">
+                  <div class="testimonial testimonial-fullwidth">
+                    <div class="testimonial-title"><img class="grayscale" style="max-height: 45px" src="img/customers/withlocals.png"></div>
+                    <div class="testimonial-content">
+                      <p>Locize has enabled Withlocals to localise effectively our website in several languages. Given that Withlocals is all about personal experiences & authenticity, being able to take over the delicate task of translating our platform’s content made Locize a valuable partner for us.</p>
+                      <p>Thanks to this collaboration we have been able to focus fully on the development of our product, and at the same time provide our translators worldwide with a user-friendly tool.</p>
+                    </div>
+                    <div class="author">
+                      <hr>Bartosz Kuzmicki, CTO<br><a href="https://www.withlocals.com/">Withlocals</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div style="padding: 50px 0 0"><a class="btn btn-outline btn-xl" href="/customers.html">More customer voices!</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h2>Get translated today. Effortless &amp; riskfree.</h2>
+              <p class="text-muted">Got a small landing page or a big web application - locize gets you there!</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="device-container">
+              <div class="device-mockup ipad_air_2 portrait silver">
+                <div class="device">
+                  <div class="screen"><img class="img-responsive" src="img/screenshots/ipad/project_stat.png" alt="locize project overview"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-item"><i class="icon-directions text-primary"></i>
+                    <h3>Flexible Integration</h3>
+                    <p class="text-muted">Choose between flexible integration options meeting your needs. From integration to wordpress or to your app built with react.js, angular, vue, ...</p>
+                    <p class="text-muted">From our one liner script enabling localization even for non developers to instrumenting your code using i18next, formatjs, polyglot, ...</p>
+                    <p class="text-muted">Profit from our experience. We will help you to decide for the best solution.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item"><i class="icon-target text-primary"></i>
+                    <h3>Risk free</h3>
+                    <p class="text-muted">In contrast to other solutions out there we built ours on most popular open source frameworks.</p>
+                    <p class="text-muted">If you ever plan to stop using locize your translations could be used by i18next, formatjs or polyglot. Nothing lost. Zero risk.</p>
+                    <p class="text-muted">We believe in the value of our product. No need to make you dependent by being incompatible with standards.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-item"><i class="icon-pie-chart text-primary"></i>
+                    <h3>Project progress</h3>
+                    <p class="text-muted">We provide you with all analytics information needed to keep control over your localization progress!</p>
+                    <p class="text-muted">Always keep the overview and keep up translating your website just in time.</p>
+                    <p class="text-muted">Never fall behind in translating your project. Stop being the bottleneck in your agile prozess.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item"><i class="icon-credit-card text-primary"></i>
+                    <h3>Variable pricing</h3>
+                    <p class="text-muted">Pay for what you use. There are no intransparent plans forcing you to pay for stuff you do not need.</p>
+                    <p class="text-muted" merge="">Costs are based on your usage. Learn more using our&nbsp;<a href="http://www.locize.com/pricing.html">price calculator</a>.</p>
+                    <p class="text-muted">Find a detailed billing forecast and history on your project.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5 align-items-center">
-              <img
-                class="img-fluid rounded-circle"
-                src="img/student-849825_1280.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">Let there be rock!</h2>
-              <p>
-                localistars will be an awesome platform for everyone! We are
-                still in the early development process. So if you have any
-                expectations or wishes, you can
-                <a href="mailto:info@localistars.com">contact us</a>. Your needs
-                will make localistars a better place.
-              </p>
-            </div>
-          </div>
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Stop waiting.<br>Start localizing.</h2>
+          <h3>Start by trying our demo generated on your newly registered account or create a new project and translate your application.</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.locize.app/register" target="_blank">Let&apos;s Get Started!</a>
+          <p class="hint">* 14d free trial. No credit card needed! No obligations!</p>
         </div>
       </div>
+      <div class="overlay"></div>
     </section>
-
-    <!-- Footer -->
-    <footer class="py-5 bg-black">
+    <section class="contact bg-tertiary" id="contact">
       <div class="container">
-        <p class="m-0 text-center text-white small">
-          Copyright &copy; localistars 2020
-        </p>
+        <h2>Have questions?</h2>
+        <p>Building a global business can be challenging. We will help you getting there.</p><a class="btn btn-outline btn-xl page-scroll" href="mailto:support@locize.com">Contact us!</a>
       </div>
-      <!-- /.container -->
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><img src="img/localistars_logo_inv.svg" style="max-width: 120px; margin-bottom: 5px;" alt="localistars logo">
+            <p>inweso GmbH</p>
+            <p>Switzerland<span style="color: white; font-size: 20px; position: relative; top: 3px; left: 5px;">🇨🇭</span></p>
+            <ul class="list-unstyled">
+              <li><a href="mailto:support@locize.com">support@localistars.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="https://docs.locize.com">Technical Documentation</a></li>
+              <li><a href="https://docs.locize.com/api.html">API</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/pricing.html">Pricing</a></li>
+              <li><a href="https://blog.locize.com">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline list-social">
+                  <li class="social-twitter"><a href="https://twitter.com/locize" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li class="social-facebook"><a href="https://www.facebook.com/Locize-1672640746084189/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li class="social-youtube"><a href="https://www.youtube.com/channel/UCPYQjBbbXojUcB8qjeIB3uA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </li>
+              <li><a href="/privacy.html">Privacy</a></li>
+              <li><a href="/terms.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center footer-copyright">
+          <p>&copy; 2020 inweso GmbH. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- MODAL-->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="1280" height="720" src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+        (function () {
+          var trigger = $("body").find('[data-toggle="modal"]');
+          trigger.click(function() {
+            var theModal = $(this).data( "target" ),
+            videoSRC = $(this).attr( "data-theVideo" ),
+            videoSRCauto = videoSRC+"&autoplay=1" ;
+            $(theModal+' iframe').attr('src', videoSRCauto);
+            $(theModal+' button.close').click(function () {
+              $(theModal+' iframe').attr('src', videoSRC);
+            });
+          });
+        })();
+      });
+      
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+      function enableCookies() {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+          ga('create', 'UA-78143856-1', 'auto');
+          ga('send', 'pageview');
+          ga('set', 'anonymizeIp', true);
+      }
+      
+      function disableCookies() {
+          var cookies = document.cookie.split(";");
+          for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i];
+              var eqPos = cookie.indexOf("=");
+              var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+              document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+          }
+      }
+      
+      window.cookieconsent.initialise({
+          "palette": {
+              "popup": {
+                  "background": "#046975",
+                  "text": "#ffffff"
+              },
+              "button": {
+                  "background": "#0E5F69",
+                  "text": "#ffffff"
+              }
+          },
+          "theme": "edgeless",
+          "type": "opt-in",
+          "content": {
+              "message": "This website uses cookies to ensure you get the best experience on our website.",
+              "allow": "Accept",
+              "dismiss": "Decline",
+              "link": "learn more",
+              "href": "https://localistars.com/privacy.html"
+          },
+          onInitialise: function (status) {
+              var type = this.options.type;
+              var didConsent = this.hasConsented();
+              if (type == 'opt-in' && didConsent) {
+                  // enable cookies
+                  enableCookies();
+              }
+              if (type == 'opt-out' && !didConsent) {
+                  // disable cookies
+                  disableCookies();
+              }
+          },
+          onStatusChange: function(status, chosenBefore) {
+              var type = this.options.type;
+              var didConsent = this.hasConsented();
+              if (type == 'opt-in' && didConsent) {
+                  // enable cookies
+                  enableCookies();
+              }
+              if (type == 'opt-out' && !didConsent) {
+                  // disable cookies
+                  disableCookies();
+              }
+          },
+          onRevokeChoice: function() {
+              var type = this.options.type;
+              if (type == 'opt-in') {
+                  // disable cookies
+                  disableCookies();
+              }
+              if (type == 'opt-out') {
+                  // enable cookies
+                  enableCookies();
+              }
+          }
+      });
+    </script>
   </body>
 </html>

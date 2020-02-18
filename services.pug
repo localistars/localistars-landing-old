@@ -1,0 +1,356 @@
+extends pug/layout.pug
+
+block head
+  title locize - services
+
+block content
+
+  section.section-secondary#services
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 Additional services provided by locize
+            p.text-muted Extend your locize experience with those additional services.
+            hr
+
+  section.section-gray(style="padding: 0;")
+    .container
+      .row
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center locize - translation memory
+            .text-center.text-muted The smart translation memory.
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | free
+              sup 1)
+            .integration-features
+              p The smart translation memory provides you with suggestions of already translated segments and helps you to save time and keeping your translations consistent.
+
+              div(style="font-style: italic;")
+                | 1) The translation memory consumes the published files of a project which will be cleared as regular download ($0.0001 per download).
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://docs.locize.com/translation-memory.html', target='_blank', style="background-color: #ccc") Learn more!
+
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center locize - audit
+            .text-center.text-muted Track all changes to your translations.
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | $0.02 per audit unit
+              sup 1)
+            .integration-features.no-overflow
+              p Auditing enables you to track any changes done to your translations. It empowers you to prove anytime when a content fragment was changed. You can choose between a time to live starting from 3 months up to 10 years.
+
+              div(style="font-style: italic;")
+                | 1) Audit unit is calculated per modification multiplied with time to live, eg:
+                br
+                | - You save 3 changes and auditing set to 3 years ttl: 3 * 3 -> 9 audit units
+                br
+                | - You save 4 changes and auditing set to 3 months ttl: 4 * 0.25 -> 1 audit unit
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center locize - crowdbased
+            .text-center.text-muted The secure way to translate your project.
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | free
+              sup 1)
+            .integration-features
+              p With the service "locize crowdbased" you can create a new project on locize containing the untranslated strings per language and share them with the translators.
+
+              div(style="font-style: italic;")
+                | - No need to grant access to your main project
+                br
+                | - The created projects are connected with your main project - import the translations back with one click
+                br
+                | - Invite translators to those projects sharing one invitation link
+                br
+                br
+
+
+              div(style="font-style: italic;")
+                | 1) The additional projects for your translators are free - the only costs are based on the modifications done on the import back.
+
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://docs.locize.com/guides-tips-and-tricks/working-with-translators#use-the-crowdbased-service', target='_blank', style="background-color: #ccc") Learn more!
+
+      .row(style="margin-top: 30px;")
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/slack.png" style="height: 40px")
+            .text-center.text-muted Keep your team notified.
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | free
+            .integration-features
+              p Enable the slack integration and choose on of your slack channels to get notified when something noteworthy happens in your localization project.
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://docs.locize.com/notifications.html#using-slack', target='_blank', style="background-color: #ccc") Learn more!
+
+
+  section.section-primary#translationservices
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 Translation partners
+            p.text-muted Directly order translations from our partners.
+            hr
+
+  section.section-gray(style="padding: 0;")
+    .container
+      .row
+        //- .col-md-4(style="position: relative;")
+        //-   .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+        //-     .integration-name.text-center
+        //-       img(src="/img/services/matecat.png")
+        //-     .text-center.text-muted The advanced cat tool.
+        //-     .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+        //-       | Free
+        //-     .integration-features
+        //-       p MateCat is a free and open source translation tool. Companies, translation agencies, freelance translators and any other users can use it for free with no limitations on the number of projects and users.
+
+        //-       div(style="font-style: italic;") You can directly export your namespaces to matecat from the namespace menu.
+
+        //-     .integration-start
+        //-       a.btn.btn-outline.btn-xl(href='https://www.matecat.com', target='_blank', style="background-color: #ccc") Learn more!
+
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/textmaster.png")
+            .text-center.text-muted Your Professional SaaS Translation Service
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | $0.066 - $0.132 per word
+            .integration-features
+              p TextMaster’s translation services are ideal for a variety of projects: simple web content, high volume product catalogs or complex documents...
+              p Offers general translation services as well as more specialized translation, including financial, technical, and legal.
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.textmaster.com/', target='_blank', style="background-color: #ccc") Learn more!
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 600px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/onehourtranslation.png")
+            .text-center.text-muted Like Having Your Own Translator On Staff
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  $0.079 - $0.139 per word
+            .integration-features
+              p One Hour Translation provides professional, fast and affordable human translation services, available 24/7.
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.onehourtranslation.com/', target='_blank', style="background-color: #ccc") Learn more!
+
+
+  section.section-primary#translationsagency
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 Translation agencies
+            p.text-muted Work in locize with our partners.
+            hr
+
+  section.section-gray(style="padding: 0;")
+    .container
+      .row
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/101translations.jpg", style="max-width: calc(100% - 50px); margin: 0 25px;")
+            .text-center.text-muted Highly qualified professionals
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  Pricing on request
+            .integration-features
+              p We have been localising apps and web content into any language in the world since 2002.
+
+              p We take a human approach to translation with highly qualified professionals actually understanding your content before translating it, and extensive testing protocols to ensure your translated content reads and works as well as the original.
+
+              div(style="font-style: italic;")
+                | Get a quote by directly sending a mail with exported namespaces to 101translations.
+                br
+                br
+                | Use the import feature of locize to import the finished translations back.
+
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='http://www.101translations.com/', target='_blank', style="background-color: #ccc") Learn more!
+
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center(style="margin-bottom: 15px;")
+              img(src="/img/services/babbleon.png", style="height: 45px; margin: 0 25px;")
+            .text-center.text-muted Translations done right the first time
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | $0.21 per word
+            .integration-features
+              p We are a team of 150+ native translators and professional localization experts. Big and small developers come to us when they can't afford any mistakes. We don't outsource; we don't promise anything we can't deliver. There is only one price and one level of quality &mdash; expert. We even help correct your English!
+
+              div(style="font-style: italic;")
+                | Upload your exported namespaces for a personalized quote using the Learn More button
+
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.ibabbleon.com/apps', target='_blank', style="background-color: #ccc") Learn more!
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center(style="margin-bottom: 15px;")
+              img(src="/img/services/acclaro.png", style="height: 45px; margin: 0 25px;")
+            .text-center.text-muted High quality translations and lower costs.
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              | pricing on request
+            .integration-features
+              p Acclaro is a localization and translation company that helps the world’s leading brands succeed across cultures.
+              p Through a fine-tuned process, top industry talent and leading technologies, we make a long-term investment in our clients’ global reputations.
+
+              div(style="font-style: italic;")
+                | Working in over 100 languages and with offices around the globe, Acclaro specializes in helping clients open new markets and gain a competitive edge by expertly adapting their brands, products and services with faster turnaround times, high quality translations and lower costs.
+                br
+                br
+                | You can request a quote
+                a(href="https://www.acclaro.com/translation-services-cost/" target="_blank")  here
+                | .
+
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.acclaro.com', target='_blank', style="background-color: #ccc") Learn more!
+
+
+      .row(style="margin-top: 30px;")
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/mars.png", style="max-width: calc(100% - 50px); margin: 0 25px;")
+            .text-center.text-muted ROBUST SOLUTIONS FOR YOUR LOCALIZATION NEEDS
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  $0.044 - $0.181
+            .integration-features
+              p Mars Translation is a professional language service platform with 17 years of experience in providing localization services & solutions for software apps, games and other industries.
+
+              p We execute translation and localization of projects while keeping quality, turnaround time and affordability in check & performing robust quality assurance for these projects. Backed by a team of localization experts, we make sure you localize into your target markets without losing your message in translation.
+
+              div(style="font-style: italic;")
+                | You can request a quote by filling the Mars Translation quotation form
+                a(href="https://www.marstranslation.com/instant-quote" target="_blank")  here
+                | .
+
+                br
+                br
+                | You can also use the free consultation feature to talk to our
+                a(href="https://www.marstranslation.com/free-consultation" target="_blank")  localization expert
+                | .
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.marstranslation.com/ ', target='_blank', style="background-color: #ccc") Learn more!
+
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/alconost.jpg", style="max-width: calc(100% - 50px); margin: 0 25px;")
+            .text-center.text-muted Localization has never been easier
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  pricing on request
+            .integration-features
+              p Alconost is a Multi-Language Localization Vendor with an impressive 14-year track record of helping companies take their products to the global market by localizing applications, games, websites, and virtually any other content into 70+ languages.
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://alconost.com/en', target='_blank', style="background-color: #ccc") Learn more!
+
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/leemeta.png", style="max-width: 120px; margin: 0 25px;")
+            .text-center.text-muted SPECIALIST TRANSLATION SOLUTIONS
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  pricing on request
+            .integration-features
+              p At Leemeta we offer turnkey translations™ through our own in-house team.
+
+              p We guarantee #mistakefree translations to our clients and promise the following:
+
+              p(style="margin: 0") - No hidden costs or unpleasant surprises
+              p(style="margin: 0") - No delays and always on time
+              p(style="margin-top: 0") - We are specialized for your line of business
+
+              div(style="font-style: italic;")
+                | Our goal with every project is to provide our clients with an expert translation, complete with all graphical and technical aspects, requiring no additional effort on the client's part. We advocate a tailored professional approach, supported by the most advanced technology.
+                br
+                br
+                | Our motto is »Challenges, not obstacles« - a perfect reflection of the way we think and act at Leemeta.
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.leemeta-translations.com/', target='_blank', style="background-color: #ccc") Learn more!
+
+
+      .row(style="margin-top: 30px;")
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/adverbum.png", style="height: 120px; margin: 0 25px;")
+            .text-center.text-muted Professional B2B Translation and Localization Services
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  pricing upon request
+            .integration-features
+              p AD VERBUM is an ISO-certified professional B2B company that employs Human-driven Translation and Localization Services for Clients across the globe.
+
+              div(style="font-style: italic;")
+                | Established in 2002 and having experience that spans nearly two decades, AD VERBUM operates with 120+ language combinations, using standardized processes to ensure High-Quality, custom-tailored, transparent, and fairly-priced translation and localization solutions to meet Your specific linguistic demands.
+
+                br
+                br
+
+
+              div(style="font-style: italic;")
+                | Please request your&nbsp;
+                a(href="https://www.adverbum.com/contact" target="_blank") Free Quote
+                | .
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.adverbum.com', target='_blank', style="background-color: #ccc") Learn more!
+
+        .col-md-4(style="position: relative;")
+          .integration(style="height: 800px; background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
+            .integration-name.text-center
+              img(src="/img/services/orange.png")
+            .text-center.text-muted Professional Translation Services
+            .text-center(style="font-size: 16px; font-weight: 600; margin-top: 30px;")
+              |  $0.18 - $0.27 per word
+            .integration-features
+              p Orange Translations provides professional translation services in 50+ languages specializing in website translation / localization.
+
+              div(style="font-style: italic;")
+                | A lot of our work involves TYPO3 and WordPress websites. Our translators specialize in fields such as technical marketing, food & beverage and consumer electronics, plus a range of other industries. Our aim is to assign translators to your projects who are perfectly qualified and familiar with your industry.
+
+              br
+
+              div(style="font-style: italic;")
+                | For any projects in Locize feel free to send us your exported namespaces and we’ll prepare a free quote for you promptly. Simply use our
+                a(href="https://www.orangetranslations.com/contact/" target="_blank") &nbsp;quotation form&nbsp;
+                | &nbsp;or email us at
+                a(href="mailto:locize-projects@orangetranslations.com") &nbsp;locize-projects@orangetranslations.com&nbsp;
+
+
+              br
+
+              div(style="font-style: italic;")
+                | We’re looking forward to hearing from you!
+
+            .integration-start
+              a.btn.btn-outline.btn-xl(href='https://www.orangetranslations.com/services/website-localization/', target='_blank', style="background-color: #ccc") Learn more!
+
+  section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
+    .container
+      h2 Need some help getting started?
+      p Get any questions you may have about integrating locize answered by one of our team members.
+      a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@locize.com') Contact us!
