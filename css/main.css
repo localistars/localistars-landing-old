@@ -438,6 +438,12 @@ header #particles-js {
 .section-gray {
   background-color: #eee;
 }
+.section-gray p.head {
+  color: #222 !important;
+}
+.section-gray hr {
+  border-color: rgba(25, 25, 25, 0.6) !important;
+}
 .section-primary,
 .section-secondary,
 .section-tertiary {
@@ -464,6 +470,11 @@ header #particles-js {
 .section-secondary ul li,
 .section-tertiary ul li {
   font-size: 18px;
+}
+.section-primary a,
+.section-secondary a,
+.section-tertiary a {
+  color: #fff;
 }
 .section-primary .section-heading h2,
 .section-secondary .section-heading h2,
