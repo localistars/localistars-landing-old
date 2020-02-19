@@ -292,7 +292,6 @@ header {
 }
 header #brand-logo {
   margin-left: 4px;
-  top: -20px;
 }
 header .header-overlay {
   background: url("../img/bg-pattern2.png"), rgba(14, 95, 105, 0.3);
