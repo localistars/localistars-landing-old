@@ -1,0 +1,106 @@
+extends pug/layout.pug
+
+block head
+  title locize - for your team
+
+block content
+
+  section.section-primary
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 Why to become a localistar?
+            p.text-center Our goal is to provide you with a platform to make your success count.
+            hr
+
+      .row
+        .col-md-6
+
+          h3 Direct Contact
+
+          p.light-font localistars is about you. You're in direct contact with the client – it's your business, it's your face. In contrast to other services out there – we don't set the price and forward the contract to the cheapest translator to maximise our own profit. You make an offer, it's your client – all we ask is a small service fee on success to cover our own costs (for transactions, currency exchange, development, ...).
+
+          h3 No risk
+
+          p.light-font It's free. We only charge you a small service fee on successful payment. There are no hidden costs.
+
+          h3 Invoicing
+
+          p.light-font No need to waste time to write invoices. It's all done automatically and VAT complient. You can download the needed documents for your accounting at anytime. Focus on your job – not on bookkeeping.
+
+        .col-md-6
+
+          h3 Get payed
+
+          p.light-font A project has to be funded by your client upfront. We take a hold on that payin until the job is done and the client approves the translations upon which we will transfer the money to your account.
+
+          h3 Find new clients with ease
+
+          p.light-font Means more time to do the real work. Less time wasted on searching and contracting means more income at the end of the month.
+
+          h3 Keep the overview
+
+          p.light-font Find all the information in one place. No longer search through an endless list of mails.
+
+
+  section.section-tertiary.features.text-center
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 For Translators
+            p.head
+              | Being more efficient using locize.
+            hr
+      .row
+        .col-md-12
+          .container-fluid
+            .row
+              .col-md-6
+                .feature-item
+                  .device-container(style="margin: 0 auto 0;")
+                    .device-mockup.macbook_2015.silver
+                      .device
+                        .screen
+                          img.img-responsive(src='img/screenshots/screen/translationmemory_s.jpg', alt='locize dashboard')
+              .col-md-6
+                .feature-item
+                  h3 Smart translation memory
+                  p All the benefits of a translation memory. Reuse translations already done. Lookup used terminology.
+                  p Take your translation memory with you exporting it to be used in SDL Trados or other localization tools.
+
+          .container-fluid
+            .row
+              .col-md-6
+                .feature-item
+                  h3 Incontext Editing
+                  p Translate directly in your Website / Application. Every translation is a click away.
+                  p Translating from within your context is the best way to understand the context of your translation.
+              .col-md-6
+                .feature-item
+                  .device-container(style="margin: 0 auto 0;")
+                    .device-mockup.macbook_2015.silver
+                      .device
+                        .screen
+                          img.img-responsive(src='img/screenshots/screen/incontext_editor_s.jpg', alt='locize statistics')
+
+
+
+  section.section-secondary.features.text-center(style="padding: 100px 0 0;")
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 For translation agencies
+            p.head
+              | Less time needed for localization - means more time for programming
+            hr
+
+
+
+  section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
+    .container
+      h2 Need some help getting started?
+      p Get any questions you may have about integrating locize answered by one of our team members.
+      a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@locize.com') Contact us!
