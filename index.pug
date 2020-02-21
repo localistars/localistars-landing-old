@@ -75,7 +75,7 @@ html(lang='en')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a.page-scroll.closeOnClick(href='#features') Features
+              a.closeOnClick(href='/#features') Features
             li
               a(href='/how-it-works.html') How it works
             li
@@ -84,12 +84,12 @@ html(lang='en')
               a(href='/services.html') Services
             li
               a(href='/pricing.html') Pricing
+            //- li
+            //-   a(href='http://blog.locize.com') Blog
             li
-              a(href='http://blog.locize.com') Blog
+              a.closeOnClick(href='/#contact') Contact
             li
-              a.page-scroll.closeOnClick(href='#contact') Contact
-            li
-              a(href='https://www.locize.app/login', target='_blank') Login
+              a(href='https://www.localistars.app/login', target='_blank') Login
             //- li.dropdown(translated="")
             //-   a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
             //-     span#selectedLng
@@ -124,32 +124,32 @@ html(lang='en')
                         img.img-responsive(src='img/screenshots/iphone6/dashboard.png', alt='locize dashboard')
                       // .button
 
-    section#customers.customers(translated="")
-      .container
-        .row
-          .col-lg-12.flex-space
-            a(href='http://www.bethesda.net/' target='_blank')
-              img.grayscale(src='img/customers/bethesda-net-black.svg', style='height: 25px;opacity: 0.4;' alt='customer logo bethesda.net')
+    //- section#customers.customers(translated="")
+    //-   .container
+    //-     .row
+    //-       .col-lg-12.flex-space
+            //- a(href='http://www.bethesda.net/' target='_blank')
+            //-   img.grayscale(src='img/customers/bethesda-net-black.svg', style='height: 25px;opacity: 0.4;' alt='customer logo bethesda.net')
 
-            a(href='http://www.wuxus.com/' target='_blank')
-              img.grayscale(src='img/customers/wuxus.png', alt='customer logo wuxus')
+            //- a(href='http://www.wuxus.com/' target='_blank')
+            //-   img.grayscale(src='img/customers/wuxus.png', alt='customer logo wuxus')
 
-            //- a(href='https://www.shoprepublic.de/' target='_blank')
-            //-   img.grayscale(style='max-height: 45px', src='img/customers/shoprepublic.png', alt='customer logo shoprepublic')
+            //- //- a(href='https://www.shoprepublic.de/' target='_blank')
+            //- //-   img.grayscale(style='max-height: 45px', src='img/customers/shoprepublic.png', alt='customer logo shoprepublic')
 
-            a(href='https://www.fubo.tv' target='_blank')
-              img.grayscale(style='max-height: 40px', src='img/customers/fubotv.png', alt='customer logo classnet')
+            //- a(href='https://www.fubo.tv' target='_blank')
+            //-   img.grayscale(style='max-height: 40px', src='img/customers/fubotv.png', alt='customer logo classnet')
 
-            a(href='https://www.withlocals.com/' target='_blank')
-              img.grayscale(style='max-height: 40px', src='img/customers/withlocals.png', alt='customer logo withlocals')
+            //- a(href='https://www.withlocals.com/' target='_blank')
+            //-   img.grayscale(style='max-height: 40px', src='img/customers/withlocals.png', alt='customer logo withlocals')
 
 
-    section.section-tertiary#video(translated="")
-      .container
-        .row
-          .col-xs-10.col-xs-offset-1
-            .embed-responsive.embed-responsive-16by9
-              iframe.embed-responsive-item(width='1280', height='720', src='https://www.youtube.com/embed/YQryHo1iHb8?rel=0&controls=0&showinfo=0', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+    //- section.section-tertiary#video(translated="")
+    //-   .container
+    //-     .row
+    //-       .col-xs-10.col-xs-offset-1
+    //-         .embed-responsive.embed-responsive-16by9
+    //-           iframe.embed-responsive-item(width='1280', height='720', src='https://www.youtube.com/embed/YQryHo1iHb8?rel=0&controls=0&showinfo=0', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
 
 
     section#benefits.benefits
@@ -320,127 +320,67 @@ html(lang='en')
                       | Need to provide those information - who did when change which segment? We get you covered.
 
 
-    section#testimonials.testimonials
-      .container
-        .row
-          .col-lg-12.text-center
-            .section-heading
-              h2 Customer Testimonials
-              p.text-muted Hear what our customers have to say!
-              hr
-        .row
-          .col-lg-12
-            .testimonial-container(translated="")
-              .row
-                .col-lg-4.col-md-4.col-sm-12
-                  .testimonial.testimonial-fullwidth
-                    .testimonial-title
-                      img.grayscale(style='max-height: 50px; max-width: 100%;', src='img/customers/bookingfactory.png')
-                    .testimonial-content
-                      p
-                        | Locize is a great tool for us to localise our hotel software solution into multiple languages for both users and their guests. We chose Locize because of their flexible pricing structure that is based on usage instead of a large monthly fee.
-                      p
-                        | We already have some great early results and now our users can translate themselves into their local language!
-                    .author
-                      hr
-                      | Evan Davies, CEO of The Booking Factory
-                      br
-                      a(href='https://thebookingfactory.com') The Booking Factory
+    //- section#testimonials.testimonials
+    //-   .container
+    //-     .row
+    //-       .col-lg-12.text-center
+    //-         .section-heading
+    //-           h2 Customer Testimonials
+    //-           p.text-muted Hear what our customers have to say!
+    //-           hr
+    //-     .row
+    //-       .col-lg-12
+    //-         .testimonial-container(translated="")
+    //-           .row
+    //-             .col-lg-4.col-md-4.col-sm-12
+    //-               .testimonial.testimonial-fullwidth
+    //-                 .testimonial-title
+    //-                   img.grayscale(style='max-height: 50px; max-width: 100%;', src='img/customers/bookingfactory.png')
+    //-                 .testimonial-content
+    //-                   p
+    //-                     | Locize is a great tool for us to localise our hotel software solution into multiple languages for both users and their guests. We chose Locize because of their flexible pricing structure that is based on usage instead of a large monthly fee.
+    //-                   p
+    //-                     | We already have some great early results and now our users can translate themselves into their local language!
+    //-                 .author
+    //-                   hr
+    //-                   | Evan Davies, CEO of The Booking Factory
+    //-                   br
+    //-                   a(href='https://thebookingfactory.com') The Booking Factory
 
-                .col-lg-3.col-md-4.col-sm-12
-                  .testimonial
-                    .testimonial-title
-                      img.grayscale(style='max-height: 50px; max-width: 100%;', src='img/customers/hypertrend.png')
-                    .testimonial-content
-                      p “Locize promises a Continuous Localization Lifecycle and delivers it with a bang.”
-                      p Using Locize, we have been able to translate over 40,000 key/value pairs for a significantly large application within a matter of days. It cannot get better than this.
-                      p Read the full&nbsp;
-                        a(href="http://www.hypertrends.com/2017/11/localization-using-locize/", target="_blank") success story.
-                    .author
-                      hr
-                      | Anup Marwadi, CEO
-                      br
-                      a(href='http://www.hypertrends.com/') Hypertrends Global Inc
+    //-             .col-lg-3.col-md-4.col-sm-12
+    //-               .testimonial
+    //-                 .testimonial-title
+    //-                   img.grayscale(style='max-height: 50px; max-width: 100%;', src='img/customers/hypertrend.png')
+    //-                 .testimonial-content
+    //-                   p “Locize promises a Continuous Localization Lifecycle and delivers it with a bang.”
+    //-                   p Using Locize, we have been able to translate over 40,000 key/value pairs for a significantly large application within a matter of days. It cannot get better than this.
+    //-                   p Read the full&nbsp;
+    //-                     a(href="http://www.hypertrends.com/2017/11/localization-using-locize/", target="_blank") success story.
+    //-                 .author
+    //-                   hr
+    //-                   | Anup Marwadi, CEO
+    //-                   br
+    //-                   a(href='http://www.hypertrends.com/') Hypertrends Global Inc
 
-                .col-lg-5.col-md-4.col-sm-12
-                  .testimonial.testimonial-fullwidth
-                    .testimonial-title
-                      img.grayscale(style='max-height: 45px', src='img/customers/withlocals.png')
-                    .testimonial-content
-                      p Locize has enabled Withlocals to localise effectively our website in several languages. Given that Withlocals is all about personal experiences & authenticity, being able to take over the delicate task of translating our platform’s content made Locize a valuable partner for us.
-                      p Thanks to this collaboration we have been able to focus fully on the development of our product, and at the same time provide our translators worldwide with a user-friendly tool.
-                    .author
-                      hr
-                      | Bartosz Kuzmicki, CTO
-                      br
-                      a(href='https://www.withlocals.com/') Withlocals
+    //-             .col-lg-5.col-md-4.col-sm-12
+    //-               .testimonial.testimonial-fullwidth
+    //-                 .testimonial-title
+    //-                   img.grayscale(style='max-height: 45px', src='img/customers/withlocals.png')
+    //-                 .testimonial-content
+    //-                   p Locize has enabled Withlocals to localise effectively our website in several languages. Given that Withlocals is all about personal experiences & authenticity, being able to take over the delicate task of translating our platform’s content made Locize a valuable partner for us.
+    //-                   p Thanks to this collaboration we have been able to focus fully on the development of our product, and at the same time provide our translators worldwide with a user-friendly tool.
+    //-                 .author
+    //-                   hr
+    //-                   | Bartosz Kuzmicki, CTO
+    //-                   br
+    //-                   a(href='https://www.withlocals.com/') Withlocals
 
-        .row
-          .col-lg-12.text-center
-            div(style="padding: 50px 0 0")
-              a.btn.btn-outline.btn-xl(href='/customers.html') More customer voices!
+    //-     .row
+    //-       .col-lg-12.text-center
+    //-         div(style="padding: 50px 0 0")
+    //-           a.btn.btn-outline.btn-xl(href='/customers.html') More customer voices!
 
-    section#benefits.benefits
-      .container
-        .row
-          .col-lg-12.text-center
-            .section-heading
-              h2 Get translated today. Effortless &amp; riskfree.
-              p.text-muted Got a small landing page or a big web application - locize gets you there!
-              hr
-        .row
-          .col-md-4
-            .device-container
-              .device-mockup.ipad_air_2.portrait.silver
-                .device
-                  .screen
-                    img.img-responsive(src='img/screenshots/ipad/project_stat.png', alt='locize project overview')
-          .col-md-8
-            .container-fluid
-              .row
-                .col-md-6
-                  .feature-item
-                    i.icon-directions.text-primary
-                    h3 Flexible Integration
-                    p.text-muted
-                      | Choose between flexible integration options meeting your needs. From integration to wordpress or to your app built with react.js, angular, vue, ...
-                    p.text-muted
-                      | From our one liner script enabling localization even for non developers to instrumenting your code using i18next, formatjs, polyglot, ...
-                    p.text-muted
-                      | Profit from our experience. We will help you to decide for the best solution.
-                .col-md-6
-                  .feature-item
-                    i.icon-target.text-primary
-                    h3 Risk free
-                    p.text-muted
-                      | In contrast to other solutions out there we built ours on most popular open source frameworks.
-                    p.text-muted
-                      | If you ever plan to stop using locize your translations could be used by i18next, formatjs or polyglot. Nothing lost. Zero risk.
-                    p.text-muted
-                      | We believe in the value of our product. No need to make you dependent by being incompatible with standards.
-              .row
-                .col-md-6
-                  .feature-item
-                    i.icon-pie-chart.text-primary
-                    h3 Project progress
-                    p.text-muted
-                      | We provide you with all analytics information needed to keep control over your localization progress!
-                    p.text-muted
-                      | Always keep the overview and keep up translating your website just in time.
-                    p.text-muted
-                      | Never fall behind in translating your project. Stop being the bottleneck in your agile prozess.
-                .col-md-6
-                  .feature-item
-                    i.icon-credit-card.text-primary
-                    h3 Variable pricing
-                    p.text-muted
-                      | Pay for what you use. There are no intransparent plans forcing you to pay for stuff you do not need.
-                    p.text-muted(merge='')
-                      | Costs are based on your usage. Learn more using our&nbsp;
-                      a(href='http://www.locize.com/pricing.html') price calculator
-                      | .
-                    p.text-muted
-                      | Find a detailed billing forecast and history on your project.
+
     section.cta
       .cta-content
         .container
@@ -470,19 +410,19 @@ html(lang='en')
               span(style='color: white; font-size: 20px; position: relative; top: 3px; left: 5px;') 🇨🇭
             ul.list-unstyled
               li
-                a(href='mailto:support@locize.com') support@localistars.com
+                a(href='mailto:support@localistars.com') support@localistars.com
           .col-md-4
             ul.list-unstyled
-              li
-                a(href='https://docs.locize.com') Technical Documentation
+              //- li
+              //-   a(href='https://docs.locize.com') Technical Documentation
               li
                 a(href='https://docs.locize.com/api.html') API
               li
                 a(href='/services.html') Services
               li
                 a(href='/pricing.html') Pricing
-              li
-                a(href='https://blog.locize.com') Blog
+              //- li
+              //-   a(href='https://blog.locize.com') Blog
               //- li
               //-   a(href='/faq.html') FAQ
           .col-md-4
@@ -490,14 +430,14 @@ html(lang='en')
               li
                 ul.list-inline.list-social
                   li.social-twitter
-                    a(href='https://twitter.com/locize', target='_blank')
+                    a(href='https://twitter.com/localistars', target='_blank')
                       i.fa.fa-twitter
-                  li.social-facebook
-                    a(href='https://www.facebook.com/Locize-1672640746084189/', target='_blank')
-                      i.fa.fa-facebook
-                  li.social-youtube
-                    a(href='https://www.youtube.com/channel/UCPYQjBbbXojUcB8qjeIB3uA', target='_blank')
-                      i.fa.fa-youtube
+                  //- li.social-facebook
+                  //-   a(href='https://www.facebook.com/Locize-1672640746084189/', target='_blank')
+                  //-     i.fa.fa-facebook
+                  //- li.social-youtube
+                  //-   a(href='https://www.youtube.com/channel/UCPYQjBbbXojUcB8qjeIB3uA', target='_blank')
+                  //-     i.fa.fa-youtube
               li
                 a(href='/privacy.html') Privacy
               li

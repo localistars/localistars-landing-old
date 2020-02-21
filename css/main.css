@@ -435,6 +435,12 @@ header #particles-js {
     margin-bottom: 0;
   }
 }
+.section-white p.head {
+  color: #222 !important;
+}
+.section-white hr {
+  border-color: rgba(25, 25, 25, 0.6) !important;
+}
 .section-gray {
   background-color: #eee;
 }
