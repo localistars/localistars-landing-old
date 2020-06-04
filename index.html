@@ -8,6 +8,9 @@
     <meta name="author" content="inweso GmbH">
     <meta name="copyright" content="inweso GmbH">
     <meta name="keywords" content="localization,internationalization,localize,translate,localistars,l10n,i18n,javascript,nodejs,localization as a service,saas translation,saas localization,laas,continuous localization,DevOps,process,free,website localization,service,software,web app,web,mobile,desktop,game,translation management,online,automate,process of localization,localization process,translation service,localization service,translation software,landing page,javascript localize,localization tool,localizing a website,localization solution,cloud localization,cloud translation,serverless,cloud,cdn,react,react.js,reactjs,angular,vue,vue-js,jquery,nodejs,i18next,json,api,react-native,localization api,translation api,localistars">
+    <link rel="alternate" href="https://localistars.com/?lng=de" hreflang="de">
+    <link rel="alternate" href="https://localistars.com/?lng=it" hreflang="it">
+    <link rel="alternate" href="https://localistars.com/?lng=en" hreflang="en">
     <meta property="og:type" content="website">
     <meta property="og:title" content="localistars - never get lost in translation">
     <meta property="og:url" content="https://localistars.com">
@@ -32,9 +35,30 @@
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     
     -->
+    <script src="https://unpkg.com/locizify@^4.0.0"></script>
+    <script>
+      locizify.init({
+        //- saveMissing: true,
+        fallbackLng: 'en',
+        load: 'languageOnly',
+        //- debug: true,
+        backend: {
+          projectId: 'a6126a70-0baa-4a96-8b59-162a20524dfd',
+          apiKey: 'key', // only needed if you like to add missing segments
+          referenceLng: 'en',
+          version: 'latest',
+          autoPilot: true
+        },
+        editor: {
+          bodyStyle: 'width: calc(100% - 505px);'
+        },
+        namespace: 'landingpage'
+      });
+      
+    </script>
     <link href="//cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet" type="text/css">
   </head>
-  <body id="page-top" style="display: block;">
+  <body id="page-top" style="display: none;">
     <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
       <div class="container">
         <div class="navbar-header">
@@ -48,6 +72,9 @@
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a class="closeOnClick" href="/#contact">Contact</a></li>
             <li><a href="https://www.localistars.app/login" target="_blank">Login</a></li>
+            <li class="dropdown" translated=""><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="selectedLng"></span><span class="caret" style="margin-top: -3px;"></span></a>
+              <ul class="dropdown-menu" id="lngSelectDropDown"></ul>
+            </li>
           </ul>
         </div>
       </div>
