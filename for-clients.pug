@@ -1,0 +1,91 @@
+extends pug/layout.pug
+
+block head
+  title localistars – choose a localistar
+
+block content
+
+  section.section-primary
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 Why should you choose a localistar?
+            p.text-center Our goal is to provide a platform that removes the tedious parts of translations.
+            hr
+
+      .row
+        .col-md-6
+
+          h3 Direct Contact
+
+          p.light-font localistars is about you. You're in direct contact with the translator – it's your project, you hold the reins. In contrast to other services we don't set the price and forward the contract to the cheapest translator to maximize our own profit. You choose the translator for your projects yourself, it's your contractor – all we ask for is a small service fee on success to cover our own costs (transactions, currency exchange and development).
+
+          h3 No risk
+
+          p.light-font We only charge you a small service fee on translation approval. No hidden costs.
+
+        .col-md-6
+
+          h3 Invoicing
+
+          p.light-font No need to waste time managing invoices. It's all done automatically and VAT-compliant. You can download the documents for your accounting anytime. Focus on your job – not on bookkeeping.
+
+          h3 Find new translators with ease
+
+          p.light-font More time to get projects done, less time wasted on searching and contracting. Overall localistars is your chance to up your time to market.
+
+          h3 Keep the overview
+
+          p.light-font Find all the information in one place. No need to skim through endless lists of emails.
+
+  section.section-secondary.features.text-center(style="padding: 100px 0 0;")
+    .container
+      .row
+        .col-lg-12.text-center
+          .section-heading
+            h2 For clients
+            p.head
+              | Let localistars do the tedious parts of your translation workflow.
+            hr
+
+      .row
+        .col-md-12
+          .container-fluid
+            .row
+              .col-md-6
+                .feature-item
+                  .device-container(style="margin: 0 auto 0;")
+                    .device-mockup.macbook_2015.silver
+                      .device
+                        .screen
+                          img.img-responsive(src='img/screenshots/screen/users_creator.jpg', alt='localistars users')
+              .col-md-6
+                .feature-item
+                  h3 Manage your team
+                  p You can add all your team-members to your organisation.
+                  p Each user can be granted individual rights so they get access to the relevant parts of your workflow.
+                  p Enhance your team with translators and stop searching for new ones every time.
+                  p Keep working with partners you trust.
+
+
+
+          .container-fluid
+            .row
+              .col-md-6
+                .feature-item
+                  h3 Versatile API
+                  p Automate your process for being more productive.
+              .col-md-6
+                .feature-item
+                  .device-container(style="margin: 0 auto 0;")
+                    .device-mockup.macbook_2015.silver
+                      .device
+                        .screen
+                          img.img-responsive(src='img/screenshots/screen/api.jpg', alt='localistars api')
+
+  section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
+    .container
+      h2 Do you need some help getting started?
+      p Any question you may have about our pricing or platform will be answered by one of our team members.
+      a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us

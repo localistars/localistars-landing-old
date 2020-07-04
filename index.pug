@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.')
+    meta(name='description', content='localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you\'ll find translators and as translator you\'ll find translation jobs. | Direct contact, no middleman – just collaborating localistars!')
     meta(name='author', content='inweso GmbH')
     meta(name='copyright', content='inweso GmbH')
     meta(name='keywords', content='localization,internationalization,localize,translate,localistars,l10n,i18n,javascript,nodejs,localization as a service,saas translation,saas localization,laas,continuous localization,DevOps,process,free,website localization,service,software,web app,web,mobile,desktop,game,translation management,online,automate,process of localization,localization process,translation service,localization service,translation software,landing page,javascript localize,localization tool,localizing a website,localization solution,cloud localization,cloud translation,serverless,cloud,cdn,react,react.js,reactjs,angular,vue,vue-js,jquery,nodejs,i18next,json,api,react-native,localization api,translation api,localistars')
@@ -14,18 +14,18 @@ html(lang='en')
     link(rel="alternate" href="https://localistars.com/?lng=en" hreflang="en")
 
     meta(property='og:type', content='website')
-    meta(property='og:title', content='localistars - never get lost in translation')
+    meta(property='og:title', content='localistars – we connect clients with translators')
     meta(property='og:url', content='https://localistars.com')
-    meta(property='og:site_name', content='localistars - never get lost in translation')
-    meta(property='og:description', content='localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.')
+    meta(property='og:site_name', content='localistars – we connect clients with translators')
+    meta(property='og:description', content='localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you\'ll find translators and as translator you\'ll find translation jobs. | Direct contact, no middleman – just collaborating localistars!')
     meta(property='og:locale', content='en')
     meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content='localistars - never get lost in translation')
-    meta(name='twitter:description', content='localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.')
+    meta(name='twitter:title', content='localistars – we connect clients with translators')
+    meta(name='twitter:description', content='localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you\'ll find translators and as translator you\'ll find translation jobs. | Direct contact, no middleman – just collaborating localistars!')
     meta(name='twitter:creator', content='@localistars')
     //- meta(name='slack-app-id', content='A71NM84Q6')
 
-    title localistars - never get lost in translation
+    title localistars – we connect clients with translators
 
     link(href='lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
@@ -41,29 +41,30 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
     //- LOCIZIFY
-    script(src='https://unpkg.com/locizify@^4.0.7')
-    script.
-      locizify.init({
-        //- saveMissing: true,
-        fallbackLng: 'en',
-        load: 'languageOnly',
-        //- debug: true,
-        backend: {
-          projectId: 'a6126a70-0baa-4a96-8b59-162a20524dfd',
-          apiKey: 'key', // only needed if you like to add missing segments
-          referenceLng: 'en',
-          version: 'production',
-          autoPilot: true
-        },
-        editor: {
-          bodyStyle: 'width: calc(100% - 505px);'
-        },
-        namespace: 'landingpage'
-      });
+    //- script(src='https://unpkg.com/locizify@^4.0.7')
+    //- script.
+    //-   locizify.init({
+    //-     //- saveMissing: true,
+    //-     fallbackLng: 'en',
+    //-     load: 'languageOnly',
+    //-     //- debug: true,
+    //-     backend: {
+    //-       projectId: 'a6126a70-0baa-4a96-8b59-162a20524dfd',
+    //-       apiKey: 'key', // only needed if you like to add missing segments
+    //-       referenceLng: 'en',
+    //-       version: 'production',
+    //-       autoPilot: true
+    //-     },
+    //-     editor: {
+    //-       bodyStyle: 'width: calc(100% - 505px);'
+    //-     },
+    //-     namespace: 'landingpage'
+    //-   });
 
     link(href='//cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css', rel='stylesheet', type="text/css")
 
-  body#page-top(style='display: none;')
+  //- body#page-top(style='display: none;')
+  body#page-top
 
     nav#mainNav.navbar.navbar-default.navbar-fixed-top
       .container
@@ -74,23 +75,26 @@ html(lang='en')
           a.navbar-brand.page-scroll(href='#page-top')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li
+            //-li
               a.closeOnClick(href='/#features') Features
             li
               a(href='/how-it-works.html') How it works
             li
-              a(href='/for-translators.html') For translators
+              a(href='/for-clients.html') Clients
+            li
+              a(href='/for-translators.html') Translators
             //- li
-            //-   a(href='/services.html') Services
+              a(href='/services.html') Services
             li
               a(href='/pricing.html') Pricing
             //- li
             //-   a(href='http://blog.localistars.com') Blog
-            li
+            //-li
               a.closeOnClick(href='/#contact') Contact
             li
               a(href='https://www.localistars.app/login', target='_blank') Login
-            li.dropdown(translated="")
+            //- Lang selector temporarily disabled due to MVP being EN
+            //-li.dropdown(translated="")
               a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
                 span#selectedLng
                 span.caret(style="margin-top: -3px;")
@@ -105,16 +109,14 @@ html(lang='en')
                 .header-content
                   .header-content-inner
                     img#brand-logo(src='img/localistars_logo_inv.svg', style='max-width: 300px; margin-bottom: 30px;', alt='localistars logo')
-                    h1 Never get lost in translation.
-                    |
-                    a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank') Signup Now!
-                    //- a.btn.btn-outline.btn-second-outline.btn-xl.page-scroll(href='#', data-toggle='modal', data-target='#videoModal', data-thevideo='https://www.youtube.com/embed/YQryHo1iHb8?rel=0&controls=0&showinfo=0') Watch Video
-                    h2 Expand your network. Find translators. Find your localistars.
+                    h1 We connect clients with translators.
+                    |                 
+                    //- a.btn.btn-outline.btn-second-outline.btn-xl.page-scroll(href='#', data-toggle='modal', data-target='#videoModal', data-thevideo='https://www.youtube.com/embed/YQryHo1iHb8?rel=0&controls=0&showinfo=0') Watch Video                   
                     h3
-                      | Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is&nbsp;
-                      strong(style='font-weight: 400;') direct contact
-                      | .
-                    h3 No middleman – just quality.
+                      | localistars is the go-to marketplace for clients and translators to get translation jobs done.
+                    h3 As client you'll find translators and as translator you'll find translation jobs.
+                    h3 Direct contact, no middleman – just collaborating localistars!
+                    a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank') Sign up now
 
               .col-sm-5
                 .device-container
@@ -157,8 +159,8 @@ html(lang='en')
         .row
           .col-lg-12.text-center
             .section-heading
-              h2 Find your localization experts. Get the job done today.
-              p.text-muted Your content - our door to a global audience!
+              h2 Localization done today together
+              p.text-muted We are about transparency and trust.
               hr
         .row
           .col-md-4
@@ -175,98 +177,43 @@ html(lang='en')
                     i.icon-directions.text-primary
                     h3 Find the best offer
                     p.text-muted
-                      | Choose the best fitting freelance translators and translation agencies from our pool.
+                      | Client: Choose the best fitting freelance translators. Translator: Bid for suitable translation jobs of clients.
                     p.text-muted
-                      | Uploading your content you will get offers from the best creators out there.
+                      | As client you accept bids based on price and experience of the translator. 
                     p.text-muted
-                      | You choose based on best price or best fit.
+                      | As translator you cherry-pick the projects you want to work on.
                 .col-md-6
                   .feature-item
                     i.icon-user.text-primary
                     h3 Direct contact
                     p.text-muted
-                      | There is no middleman – you got direct access to the experts.
+                      | There is no middleman – you get direct access to the experts. No annoying text monitoring or filtering.
                     p.text-muted
-                      | You can choose to keep working with the same translators for future projects – growing your own team.
-                    p.text-muted
-                      | Transparancy and trust.
+                      | As client you may choose to collaborate with the same translators for future projects and grow your own team.
+
               .row
                 .col-md-6
                   .feature-item
                     i.icon-book-open.text-primary
-                    h3 Your content
+                    h3 Content-centric
                     p.text-muted
-                      | It's all about your content – your content and the best experts to translate it!
+                      | It's all about the content. Projects are set-up with content in mind so the localistars can work together effectively.
                     p.text-muted
-                      | You need to reach a global audience. Localistars will help you getting there.
+                      | Clients want to reach their global audience while translators want to choose from diverse tasks. We heard you both.
                 .col-md-6
                   .feature-item
                     i.icon-credit-card.text-primary
-                    h3 Risk free payment
+                    h3 Risk-free payment
                     p.text-muted
-                      | Both you and your partner can sleep well:
+                      | As a localistar you don't need to worry about your payment.
                     p.text-muted(merge='')
-                      | You only get charged if you approved the content provided by the translator.
+                      | Clients will only be charged if they approve the content provided by a translator.
                     p.text-muted
-                      | The translator can be sure he will get paid on approvement.
+                      | Translators always get paid on approval.
 
 
 
-    section#features.features.bg-primary.text-center
-      .container
-        .row
-          .col-lg-12.text-center
-            .section-heading
-              h2 Grow global with the help of your localistars
-              p.head
-                | Create your global success team.
-              hr
-        .row
-          .col-md-12
-            .container-fluid
-              .row
-                .col-md-6
-                  .feature-item
-                    .device-container
-                      .device-mockup.macbook_2015.silver
-                        .device
-                          .screen
-                            img.img-responsive(src='img/screenshots/screen/project_consumer.jpg', alt='localistars project')
-                          .button
-                    h3 Stop searching for translators
-                    p
-                      | Upload your content - and get found.
-                .col-md-6
-                  .feature-item
-                    .device-container
-                      .device-mockup.macbook_2015.silver
-                        .device
-                          .screen
-                            img.img-responsive(src='img/screenshots/screen/partners.jpg', alt='localistars partners')
-                    h3 Build up your team
-                    p
-                      | Keep working with partners you trust.
-              .row
-                .col-md-6
-                  .feature-item
-                    .device-container
-                      .device-mockup.macbook_2015.silver
-                        .device
-                          .screen
-                            img.img-responsive(src='img/screenshots/screen/accounting.jpg', alt='localistars accounting')
-                    h3 Accounting overview
-                    p
-                      | Keep the overview about every transaction.
-                .col-md-6
-                  .feature-item
-                    .device-container
-                      .device-mockup.macbook_2015.silver
-                        .device
-                          .screen
-                            img.img-responsive(src='img/screenshots/screen/permissions.jpg', alt='localistars role management')
-                    h3 Extended Role Management
-                    p
-                      | Fine graned control over the access to your content.
+    
 
 
     //- section#testimonials.testimonials
@@ -334,19 +281,19 @@ html(lang='en')
       .cta-content
         .container
           h2
-            | Let there be rock!
+            | Get started now!
           h3
-            | Start by uploading your first content to be translated.
+            | Become a localistar and either upload translation projects as client or search for projects as translator.
           |
-          a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank') Let&apos;s Get Started!
-          p.hint * No fees to call for tenders! No obligations!
+          a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank') Let&apos;s get started
+          p.hint *No fees for issuing tenders or bidding! No obligations!
       .overlay
     section#contact.contact.bg-tertiary
       .container
-        h2 Have questions?
-        p Building a global business can be challenging. We will help you getting there.
+        h2 Do you have questions?
+        p Building a global business can be challenging. We will help you accomplish it.
         |
-        a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us!
+        a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us
     footer
       .container
         .row
@@ -376,7 +323,7 @@ html(lang='en')
             ul.list-unstyled
               li
                 ul.list-inline.list-social
-                  li.social-twitter
+                  //-li.social-twitter
                     a(href='https://twitter.com/localistars', target='_blank')
                       i.fa.fa-twitter
                   //- li.social-facebook
@@ -389,6 +336,8 @@ html(lang='en')
                 a(href='/privacy.html') Privacy
               li
                 a(href='/terms.html') Terms
+              li
+                a(href='/#contact') Contact
         .text-center.footer-copyright
           p &copy; 2020 inweso GmbH. All Rights Reserved.
 

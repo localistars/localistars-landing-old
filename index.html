@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.">
+    <meta name="description" content="localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you'll find translators and as translator you'll find translation jobs. | Direct contact, no middleman – just collaborating localistars!">
     <meta name="author" content="inweso GmbH">
     <meta name="copyright" content="inweso GmbH">
     <meta name="keywords" content="localization,internationalization,localize,translate,localistars,l10n,i18n,javascript,nodejs,localization as a service,saas translation,saas localization,laas,continuous localization,DevOps,process,free,website localization,service,software,web app,web,mobile,desktop,game,translation management,online,automate,process of localization,localization process,translation service,localization service,translation software,landing page,javascript localize,localization tool,localizing a website,localization solution,cloud localization,cloud translation,serverless,cloud,cdn,react,react.js,reactjs,angular,vue,vue-js,jquery,nodejs,i18next,json,api,react-native,localization api,translation api,localistars">
@@ -12,16 +12,16 @@
     <link rel="alternate" href="https://localistars.com/?lng=it" hreflang="it">
     <link rel="alternate" href="https://localistars.com/?lng=en" hreflang="en">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="localistars - never get lost in translation">
+    <meta property="og:title" content="localistars – we connect clients with translators">
     <meta property="og:url" content="https://localistars.com">
-    <meta property="og:site_name" content="localistars - never get lost in translation">
-    <meta property="og:description" content="localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.">
+    <meta property="og:site_name" content="localistars – we connect clients with translators">
+    <meta property="og:description" content="localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you'll find translators and as translator you'll find translation jobs. | Direct contact, no middleman – just collaborating localistars!">
     <meta property="og:locale" content="en">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="localistars - never get lost in translation">
-    <meta name="twitter:description" content="localistars - Expand your network. Find translators. Find your localistars. Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is direct contact.">
+    <meta name="twitter:title" content="localistars – we connect clients with translators">
+    <meta name="twitter:description" content="localistars is the go-to marketplace for clients and translators to get translation jobs done. As client you'll find translators and as translator you'll find translation jobs. | Direct contact, no middleman – just collaborating localistars!">
     <meta name="twitter:creator" content="@localistars">
-    <title>localistars - never get lost in translation</title>
+    <title>localistars – we connect clients with translators</title>
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -35,30 +35,9 @@
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     
     -->
-    <script src="https://unpkg.com/locizify@^4.0.7"></script>
-    <script>
-      locizify.init({
-        //- saveMissing: true,
-        fallbackLng: 'en',
-        load: 'languageOnly',
-        //- debug: true,
-        backend: {
-          projectId: 'a6126a70-0baa-4a96-8b59-162a20524dfd',
-          apiKey: 'key', // only needed if you like to add missing segments
-          referenceLng: 'en',
-          version: 'production',
-          autoPilot: true
-        },
-        editor: {
-          bodyStyle: 'width: calc(100% - 505px);'
-        },
-        namespace: 'landingpage'
-      });
-      
-    </script>
     <link href="//cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet" type="text/css">
   </head>
-  <body id="page-top" style="display: none;">
+  <body id="page-top">
     <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
       <div class="container">
         <div class="navbar-header">
@@ -66,15 +45,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="closeOnClick" href="/#features">Features</a></li>
             <li><a href="/how-it-works.html">How it works</a></li>
-            <li><a href="/for-translators.html">For translators</a></li>
+            <li><a href="/for-clients.html">Clients</a></li>
+            <li><a href="/for-translators.html">Translators</a></li>
             <li><a href="/pricing.html">Pricing</a></li>
-            <li><a class="closeOnClick" href="/#contact">Contact</a></li>
             <li><a href="https://www.localistars.app/login" target="_blank">Login</a></li>
-            <li class="dropdown" translated=""><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="selectedLng"></span><span class="caret" style="margin-top: -3px;"></span></a>
-              <ul class="dropdown-menu" id="lngSelectDropDown"></ul>
-            </li>
           </ul>
         </div>
       </div>
@@ -87,10 +62,10 @@
             <div class="col-sm-7">
               <div class="header-content">
                 <div class="header-content-inner"><img id="brand-logo" src="img/localistars_logo_inv.svg" style="max-width: 300px; margin-bottom: 30px;" alt="localistars logo">
-                  <h1>Never get lost in translation.</h1><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank">Signup Now!</a>
-                  <h2>Expand your network. Find translators. Find your localistars.</h2>
-                  <h3>Localistars is the marketplace to get your translation job done. Find the best translation experts in the net. | The formula of success is&nbsp;<strong style="font-weight: 400;">direct contact</strong>.</h3>
-                  <h3>No middleman – just quality.</h3>
+                  <h1>We connect clients with translators.</h1>                
+                  <h3>localistars is the go-to marketplace for clients and translators to get translation jobs done.</h3>
+                  <h3>As client you'll find translators and as translator you'll find translation jobs.</h3>
+                  <h3>Direct contact, no middleman – just collaborating localistars!</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank">Sign up now</a>
                 </div>
               </div>
             </div>
@@ -113,8 +88,8 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-heading">
-              <h2>Find your localization experts. Get the job done today.</h2>
-              <p class="text-muted">Your content - our door to a global audience!</p>
+              <h2>Localization done today together</h2>
+              <p class="text-muted">We are about transparency and trust.</p>
               <hr>
             </div>
           </div>
@@ -135,110 +110,33 @@
                 <div class="col-md-6">
                   <div class="feature-item"><i class="icon-directions text-primary"></i>
                     <h3>Find the best offer</h3>
-                    <p class="text-muted">Choose the best fitting freelance translators and translation agencies from our pool.</p>
-                    <p class="text-muted">Uploading your content you will get offers from the best creators out there.</p>
-                    <p class="text-muted">You choose based on best price or best fit.</p>
+                    <p class="text-muted">Client: Choose the best fitting freelance translators. Translator: Bid for suitable translation jobs of clients.</p>
+                    <p class="text-muted">As client you accept bids based on price and experience of the translator. </p>
+                    <p class="text-muted">As translator you cherry-pick the projects you want to work on.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="feature-item"><i class="icon-user text-primary"></i>
                     <h3>Direct contact</h3>
-                    <p class="text-muted">There is no middleman – you got direct access to the experts.</p>
-                    <p class="text-muted">You can choose to keep working with the same translators for future projects – growing your own team.</p>
-                    <p class="text-muted">Transparancy and trust.</p>
+                    <p class="text-muted">There is no middleman – you get direct access to the experts. No annoying text monitoring or filtering.</p>
+                    <p class="text-muted">As client you may choose to collaborate with the same translators for future projects and grow your own team.</p>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="feature-item"><i class="icon-book-open text-primary"></i>
-                    <h3>Your content</h3>
-                    <p class="text-muted">It's all about your content – your content and the best experts to translate it!</p>
-                    <p class="text-muted">You need to reach a global audience. Localistars will help you getting there.</p>
+                    <h3>Content-centric</h3>
+                    <p class="text-muted">It's all about the content. Projects are set-up with content in mind so the localistars can work together effectively.</p>
+                    <p class="text-muted">Clients want to reach their global audience while translators want to choose from diverse tasks. We heard you both.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="feature-item"><i class="icon-credit-card text-primary"></i>
-                    <h3>Risk free payment</h3>
-                    <p class="text-muted">Both you and your partner can sleep well:</p>
-                    <p class="text-muted" merge="">You only get charged if you approved the content provided by the translator.</p>
-                    <p class="text-muted">The translator can be sure he will get paid on approvement.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="features bg-primary text-center" id="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-heading">
-              <h2>Grow global with the help of your localistars</h2>
-              <p class="head">Create your global success team.</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="device-container">
-                      <div class="device-mockup macbook_2015 silver">
-                        <div class="device">
-                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/project_consumer.jpg" alt="localistars project"></div>
-                          <div class="button"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3>Stop searching for translators</h3>
-                    <p>Upload your content - and get found.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="device-container">
-                      <div class="device-mockup macbook_2015 silver">
-                        <div class="device">
-                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/partners.jpg" alt="localistars partners"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3>Build up your team</h3>
-                    <p>Keep working with partners you trust.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="device-container">
-                      <div class="device-mockup macbook_2015 silver">
-                        <div class="device">
-                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/accounting.jpg" alt="localistars accounting"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3>Accounting overview</h3>
-                    <p>Keep the overview about every transaction.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="device-container">
-                      <div class="device-mockup macbook_2015 silver">
-                        <div class="device">
-                          <div class="screen"><img class="img-responsive" src="img/screenshots/screen/permissions.jpg" alt="localistars role management"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3>Extended Role Management</h3>
-                    <p>Fine graned control over the access to your content.</p>
+                    <h3>Risk-free payment</h3>
+                    <p class="text-muted">As a localistar you don't need to worry about your payment.</p>
+                    <p class="text-muted" merge="">Clients will only be charged if they approve the content provided by a translator.</p>
+                    <p class="text-muted">Translators always get paid on approval.</p>
                   </div>
                 </div>
               </div>
@@ -250,17 +148,17 @@
     <section class="cta">
       <div class="cta-content">
         <div class="container">
-          <h2>Let there be rock!</h2>
-          <h3>Start by uploading your first content to be translated.</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank">Let&apos;s Get Started!</a>
-          <p class="hint">* No fees to call for tenders! No obligations!</p>
+          <h2>Get started now!</h2>
+          <h3>Become a localistar and either upload translation projects as client or search for projects as translator.</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank">Let&apos;s get started</a>
+          <p class="hint">*No fees for issuing tenders or bidding! No obligations!</p>
         </div>
       </div>
       <div class="overlay"></div>
     </section>
     <section class="contact bg-tertiary" id="contact">
       <div class="container">
-        <h2>Have questions?</h2>
-        <p>Building a global business can be challenging. We will help you getting there.</p><a class="btn btn-outline btn-xl page-scroll" href="mailto:support@localistars.com">Contact us!</a>
+        <h2>Do you have questions?</h2>
+        <p>Building a global business can be challenging. We will help you accomplish it.</p><a class="btn btn-outline btn-xl page-scroll" href="mailto:support@localistars.com">Contact us</a>
       </div>
     </section>
     <footer>
@@ -281,12 +179,11 @@
           <div class="col-md-4">
             <ul class="list-unstyled">
               <li>
-                <ul class="list-inline list-social">
-                  <li class="social-twitter"><a href="https://twitter.com/localistars" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                </ul>
+                <ul class="list-inline list-social"></ul>
               </li>
               <li><a href="/privacy.html">Privacy</a></li>
               <li><a href="/terms.html">Terms</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </div>
         </div>

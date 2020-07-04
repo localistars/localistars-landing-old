@@ -1,7 +1,7 @@
 extends pug/layout.pug
 
 block head
-  title localistars - pricing
+  title localistars – pricing
 
 block content
 
@@ -10,65 +10,31 @@ block content
       .row
         .col-lg-12.text-center
           .section-heading
-            h2 No fixed price – you make the deal
+            h2 Transparent pricing model
             p.text-muted
-              | The offer comes
-              strong &nbsp;directly&nbsp;
-              | from your partners – there is no middleman.
+              | Offers will be made by translators – no middleman, no hidden costs.
             hr
 
+  section.section-gray
+    .container
       .row
-        .col-md-12
+        .col-md-6
+          .pricing(style="background-color: #fff; border: solid 1px #ccc; top: -100px; width: 100%; border-radius: 4px; padding-bottom:30px;")
+            .pricing-name.text-center Client
+            .pricing-price-subtitle.text-center 
+              | Variable commission on approved work.
+        
+        .col-md-6
+          .pricing(style="background-color: #fff; border: solid 1px #ccc; top: -100px; width: 100%; border-radius: 4px; padding-bottom:30px;")
+            .pricing-name.text-center Translator
+            .pricing-price-subtitle.text-center
+              | Service fee on approved task.
 
-          h3 You're in control.
-
-          p.light-font Upload your source content. Make your request for proposal, wait for bids and select the best fitting partner.
-
-          h3 No hidden costs.
-
-          p.light-font There are no costs for publishing your request for proposal. You just pay the sum your translation partner and you agreed on.
+      .row 
+        .col-md-12.text-center
+          a.btn.btn-outline.btn-xl(href='https://www.localistars.app/register', target='_blank', style="background: #0e5f69;margin-top:30px") Get started
 
 
-
-  //- section.section-gray(style="padding: 0;")
-  //-   .container
-  //-     .row
-  //-       .col-md-6.col-md-offset-3(style="position: relative;")
-  //-         .pricing(style="background-color: #fff; border: solid 1px #ccc; position: relative; top: -100px; width: 100%; border-radius: 4px;")
-  //-           .pricing-name.text-center Scales with you
-  //-           .pricing-price-subtitle.text-center.text-muted Starting price
-  //-           .pricing-price.text-center
-  //-             small.currency $
-  //-             | 5
-  //-             small.text-muted (billed monthly)
-  //-           .pricing-start
-  //-             a.btn.btn-outline.btn-xl(href='https://www.localistars.app/register', target='_blank', style="background-color: #ccc") Get started!
-  //-           .pricing-features
-  //-             | 14d free trial:
-  //-             ul
-  //-               li 14 days of free usage
-  //-               li No credit card needed! No obligations!
-  //-           .pricing-features
-  //-             | All features included:
-  //-             ul
-  //-               li Unlimited Languages, Files, Users (Admin, Developers, Translators, ...)
-  //-               li Flexible integrations, InContext Editor
-  //-               li Publish to our CDN (public or private)
-  //-               li Continuous Localization Lifecycle
-  //-               li Online Translation Editor
-  //-               li Rich support for i18next, icu/messageformat, i18n-js (plurals, ...)
-  //-               li Smart Translation Memory
-  //-               li
-  //-                 | Translation ordering from our translation partners&nbsp;
-  //-                 a(href="services.html#translationservices"): i.fa.fa-info-circle
-  //-               li Import / Export JSON, XLIFF, XML, YAML, CSV, GETTEXT, RESX, TMX
-  //-               li Statistics, Versioning, Audit tracking&nbsp;
-  //-                 a(href="services.html#services"): i.fa.fa-info-circle
-  //-               li CLI and API Access, webhooks
-  //-               li
-  //-                 | Synchronize with your code repository, sync during build time&nbsp;
-  //-                 a(href="https://github.com/localistars/localistars-cli#synchronize-localistars-with-your-repository-or-any-other-local-directory"): i.fa.fa-info-circle
-  //-               li Email Support
 
   //- section.section-white
   //-   .container
@@ -269,6 +235,6 @@ block content
 
   section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
     .container
-      h2 Need some assistance?
-      p Get any questions you may have about our pricing or platform answered by one of our team members.
-      a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us!
+      h2 Do you need assistance?
+      p Any question you may have about our pricing or platform will be answered by one of our team members.
+      a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us
