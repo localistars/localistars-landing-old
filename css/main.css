@@ -294,12 +294,7 @@ header #brand-logo {
   margin-left: 4px;
 }
 header .header-overlay {
-  background: url("../img/bg-pattern2.png"), rgba(14, 95, 105, 0.3);
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern2.png"), -webkit-linear-gradient(to left, rgba(14, 95, 105, 0.6), rgba(4, 105, 117, 0.4));
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern2.png"), linear-gradient(to left, rgba(14, 95, 105, 0.6), rgba(4, 105, 117, 0.4));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, rgba(14, 95, 105, 0.8), rgba(4, 105, 117, 0.7));
 }
 header .header-content {
   text-align: center;
@@ -764,7 +759,7 @@ section.contact p {
 footer {
   background-color: #222222;
   padding: 25px 0;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 footer p {
   font-weight: 300;
@@ -777,7 +772,7 @@ footer ul {
 footer ul li a {
   font-size: 14px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 footer ul li a:hover,
 footer ul li a:focus,
