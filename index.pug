@@ -119,12 +119,11 @@ html(lang='en')
                     a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank', style='margin-top: 30px;') Sign up now
 
               .col-sm-5
-                .device-container
-                  .device-mockup.iphone6_plus.portrait
-                    .device
-                      .screen
-                        img.img-responsive(src='img/screenshots/iphone6/dashboard.jpg', alt='localistars dashboard')
-                      // .button
+                .device-wrapper
+                  .device(data-device="iPhoneX", data-orientation="portrait", data-color="black")
+                    .screen
+                      img.img-responsive(src='img/screenshots/iphone6/dashboard.jpg', alt='localistars dashboard')
+                    // .button
 
     //- section#customers.customers(translated="")
     //-   .container
@@ -164,11 +163,10 @@ html(lang='en')
               hr
         .row
           .col-md-4
-            .device-container
-              .device-mockup.ipad_air_2.portrait.silver
-                .device
-                  .screen
-                    img.img-responsive(src='img/screenshots/ipad/project_stat.jpg', alt='localistars project overview')
+            .device-wrapper
+              .device(data-device="iPadAir2", data-orientation="portrait", data-color="white")
+                .screen
+                  img.img-responsive(src='img/screenshots/ipad/project_stat.jpg', alt='localistars project overview')
           .col-md-8
             .container-fluid
               .row

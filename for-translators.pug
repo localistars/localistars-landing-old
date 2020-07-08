@@ -59,11 +59,10 @@ block content
             .row
               .col-md-6
                 .feature-item
-                  .device-container(style="margin: 0 auto 0;")
-                    .device-mockup.macbook_2015.silver
-                      .device
-                        .screen
-                          img.img-responsive(src='img/screenshots/screen/find_projects.jpg', alt='localistars find new jobs')
+                  .device-wrapper(style="margin: 0 auto 0;")
+                    .device(data-device="MacbookPro", data-orientation="portrait", data-color="black", style="z-index: 0;")
+                      .screen
+                        img.img-responsive(src='img/screenshots/screen/find_projects.jpg', alt='localistars find new jobs')
               .col-md-6
                 .feature-item
                   h3 Find new projects
@@ -78,11 +77,10 @@ block content
                   p Keep working with partners you trust.
               .col-md-6
                 .feature-item
-                  .device-container(style="margin: 0 auto 0;")
-                    .device-mockup.macbook_2015.silver
-                      .device
-                        .screen
-                          img.img-responsive(src='img/screenshots/screen/partners_creator.jpg', alt='localistars partners')
+                  .device-wrapper(style="margin: 0 auto 0;")
+                    .device(data-device="MacbookPro", data-orientation="portrait", data-color="black", style="z-index: 0;")
+                      .screen
+                        img.img-responsive(src='img/screenshots/screen/partners_creator.jpg', alt='localistars partners')
 
   section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
     .container

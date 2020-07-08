@@ -115,11 +115,10 @@ html(lang='en')
                     h3 Ready to signup? Go for it! – Want to learn a little more? Read below.
 
               .col-sm-5
-                .device-container
-                  .device-mockup.iphone6_plus.portrait
-                    .device
-                      .screen
-                        img.img-responsive(src='img/screenshots/iphone6/dashboard_creator.jpg', alt='localistars dashboard')
+                .device-wrapper
+                  .device(data-device="iPhoneX", data-orientation="portrait", data-color="black")
+                    .screen
+                      img.img-responsive(src='img/screenshots/iphone6/dashboard_creator.jpg', alt='localistars dashboard')
                       // .button
 
   section.section-secondary
