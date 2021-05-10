@@ -258,8 +258,8 @@
               <div class="section-heading">
                 <h2>localistars is also integrated in <a href="https://www.locize.com">locize</a></h2>
                 <p class="head"><a href="https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars" style="color: white;">Check out how the locize integrates localistars.</a></p>
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/WobsZ_er0I4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                <div class="embed-responsive embed-responsive-16by9" id="locize-video" style="display: none;">
+                  <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube-nocookie.com/embed/WobsZ_er0I4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
               </div>
             </div>
@@ -272,6 +272,14 @@
           <p>Any question you may have about our pricing or platform will be answered by one of our team members.</p><a class="btn btn-outline btn-xl page-scroll" href="mailto:support@localistars.com">Contact us</a>
         </div>
       </section>
+      <script>
+        window.enableCookiesHook = function () {
+          $('#locize-video').show();
+        };
+        window.disableCookiesHook = function () {
+          $('#locize-video').hide();
+        };
+      </script>
     </div>
     <footer i18next-options="{&quot;ns&quot;: &quot;common&quot;}">
       <div class="container">
@@ -331,6 +339,8 @@
           ga('create', 'UA-162811675-1', 'auto');
           ga('send', 'pageview');
           ga('set', 'anonymizeIp', true);
+      
+          if (typeof window.enableCookiesHook === 'function') window.enableCookiesHook();
       }
       
       function disableCookies() {
@@ -341,6 +351,8 @@
               var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
               document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
           }
+      
+          if (typeof window.disableCookiesHook === 'function') window.disableCookiesHook();
       }
       
       window.cookieconsent.initialise({

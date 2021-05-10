@@ -208,8 +208,8 @@ block content
             p.head
               a(href='https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars', style="color: white;") Check out how the locize integrates localistars.
 
-            .embed-responsive.embed-responsive-16by9
-              iframe.embed-responsive-item(width='1280', height='720', src='https://www.youtube.com/embed/WobsZ_er0I4?rel=0&controls=0&showinfo=0', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+            .embed-responsive.embed-responsive-16by9#locize-video(style="display: none;")
+              iframe.embed-responsive-item(width='1280', height='720', src='https://www.youtube-nocookie.com/embed/WobsZ_er0I4?rel=0&controls=0&showinfo=0', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
 
 
   section#contact.contact.bg-tertiary(i18next-options='{"ns": "common"}')
@@ -217,3 +217,11 @@ block content
       h2 Do you need some help getting started?
       p Any question you may have about our pricing or platform will be answered by one of our team members.
       a.btn.btn-outline.btn-xl.page-scroll(href='mailto:support@localistars.com') Contact us
+
+  script.
+    window.enableCookiesHook = function () {
+      $('#locize-video').show();
+    };
+    window.disableCookiesHook = function () {
+      $('#locize-video').hide();
+    };
