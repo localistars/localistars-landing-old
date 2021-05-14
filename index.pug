@@ -119,6 +119,7 @@ html(lang='en')
                       | as translator you'll find translation jobs.
                     h3 Direct contact, no middleman – just collaborating localistars!
                     a.btn.btn-outline.btn-xl.page-scroll(href='https://www.localistars.app/register', target='_blank', style='margin-top: 30px;') Sign up now
+                    a.btn.btn-outline.btn-second-outline.btn-xl.page-scroll#link-video-btn(style="margin-top: 30px; float: right;", href='https://youtu.be/e6Ede8hdU8c', target='_blank') Watch Video
                     a.btn.btn-outline.btn-second-outline.btn-xl.page-scroll#watch-video-btn(style="display: none; margin-top: 30px; float: right;", href='#', data-toggle='modal', data-target='#videoModal', data-thevideo='https://www.youtube-nocookie.com/embed/e6Ede8hdU8c?rel=0&controls=0&showinfo=0') Watch Video
 
               .col-sm-5
@@ -374,6 +375,7 @@ html(lang='en')
           ga('set', 'anonymizeIp', true);
 
           $('#watch-video-btn').show();
+          $('#link-video-btn').hide();
       }
 
       function disableCookies() {
@@ -385,6 +387,7 @@ html(lang='en')
               document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
           }
           $('#watch-video-btn').hide();
+          $('#link-video-btn').show();
       }
 
       window.cookieconsent.initialise({

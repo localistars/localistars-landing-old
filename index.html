@@ -66,7 +66,7 @@
                   <h3>localistars is the go-to marketplace for clients and translators to get translation jobs done.</h3>
                   <h3>
                      As client you'll find translators and<br>as translator you'll find translation jobs.</h3>
-                  <h3>Direct contact, no middleman – just collaborating localistars!</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank" style="margin-top: 30px;">Sign up now</a><a class="btn btn-outline btn-second-outline btn-xl page-scroll" id="watch-video-btn" style="display: none; margin-top: 30px; float: right;" href="#" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube-nocookie.com/embed/e6Ede8hdU8c?rel=0&amp;controls=0&amp;showinfo=0">Watch Video</a>
+                  <h3>Direct contact, no middleman – just collaborating localistars!</h3><a class="btn btn-outline btn-xl page-scroll" href="https://www.localistars.app/register" target="_blank" style="margin-top: 30px;">Sign up now</a><a class="btn btn-outline btn-second-outline btn-xl page-scroll" id="link-video-btn" style="margin-top: 30px; float: right;" href="https://youtu.be/e6Ede8hdU8c" target="_blank">Watch Video</a><a class="btn btn-outline btn-second-outline btn-xl page-scroll" id="watch-video-btn" style="display: none; margin-top: 30px; float: right;" href="#" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube-nocookie.com/embed/e6Ede8hdU8c?rel=0&amp;controls=0&amp;showinfo=0">Watch Video</a>
                 </div>
               </div>
             </div>
@@ -244,6 +244,7 @@
           ga('set', 'anonymizeIp', true);
       
           $('#watch-video-btn').show();
+          $('#link-video-btn').hide();
       }
       
       function disableCookies() {
@@ -255,6 +256,7 @@
               document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
           }
           $('#watch-video-btn').hide();
+          $('#link-video-btn').show();
       }
       
       window.cookieconsent.initialise({
